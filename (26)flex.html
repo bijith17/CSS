@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>flexbox</title>
+</head>
+<style>
+
+.container{
+    display: flex;
+    flex-direction: row; 
+    height: 400px;
+    background-color: rgb(42, 86, 127);
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.s1{
+    flex:1;
+   
+}
+
+.s1,.s2,.s3{
+    height: 250px;
+    width: 250px;
+    /* float: left; */
+    background-color: salmon;
+    border: 1px solid black;
+}
+</style>
+<body>
+    <div class="container">
+        <div class="s1">Section 1</div>
+        <div class="s2"> Section 2</div>
+        <div class="s3"> Section 3</div>
+    </div>
+</body>
+</html>

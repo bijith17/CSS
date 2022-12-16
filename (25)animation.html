@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.a{
+    width:0;
+    height: 0;
+}
+.i{
+ 
+  width: 0;
+  height: 0;
+  border-left: 50px  solid transparent;
+  border-right: 50px solid transparent; 
+  border-bottom: 100px solid rgb(38, 124, 221);
+
+  position: relative;
+  animation-name: hello;
+  animation-duration: 4s;
+  
+  animation-iteration-count: 1;
+}
+
+@keyframes hello {
+  0%   { left:20px; top:20px;}
+  25%  { left:200px; top:0px;}
+  50%  { left:200px; top:200px;}
+  70%  { left:0px; top:200px;}
+  100% { left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+
+<div class="a"></div>
+<div class="i"></div>
+
+</body>
+</html>
+
+
